@@ -5,7 +5,7 @@ export default function Home() {
   const [message, setMessage] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
- 
+  
   useEffect(() => {
     fetch('/api/hello')
       .then((res) => {
